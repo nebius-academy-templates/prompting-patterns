@@ -1,0 +1,58 @@
+# Answers: Debugging Pattern
+
+## Practice Exercise Solutions
+
+### 1. Memory Leak Issue
+
+**Good Prompt:**
+```
+Problem: File organiser uses increasing amounts of memory and gets slower with large files
+
+Expected: Memory usage should stay constant regardless of file size
+Actual: Memory grows from 50MB to 500MB when processing 1000 files, processing speed drops from 10 files/sec to 2 files/sec
+
+Context files:
+- file_organiser.py (main processing loop)
+- Large test files in test_files/ directory
+
+Suspected issue: File objects or data structures not being properly cleaned up after processing each file
+```
+
+### 2. Permission Errors
+
+**Good Prompt:**
+```
+Problem: Program crashes with "PermissionError: [Errno 13] Permission denied" when moving files
+
+Expected: Should handle permission errors gracefully and continue processing other files
+Actual: Entire program stops when it hits a protected file or folder
+
+Context files:
+- file_organiser.py (file moving logic)
+- test_files/ (contains some read-only files)
+
+Error occurs in move_file() function when trying to move files to system directories
+```
+
+### 3. Duplicate File Handling
+
+**Good Prompt:**
+```
+Problem: Files with identical names overwrite each other without warning
+
+Expected: Should detect duplicates and either rename them or ask user what to do
+Actual: Second file with same name silently replaces the first file
+
+Context files:
+- file_organiser.py (file moving and naming logic)
+- test_files/ (contains duplicate.txt files)
+
+Issue happens in organise_files() when destination file already exists
+```
+
+## Key Takeaways
+
+- **Problem**: Be specific about the error and when it occurs
+- **Expected vs Actual**: Clearly show the gap between what should happen and what does
+- **Context Files**: Point to the exact files and functions involved
+- Include error messages and specific conditions that trigger the bug! 
