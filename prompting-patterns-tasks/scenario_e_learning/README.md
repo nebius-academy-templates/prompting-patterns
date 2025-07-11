@@ -1,8 +1,8 @@
 # Scenario E: Learning Pattern
 
-## Step 1: Test the Cache System
+## Step 1: Test the cache system
 
-First, see the cache in action:
+First, see the cache system in action:
 
 ```bash
 python cache_system.py
@@ -20,10 +20,10 @@ python cache_system.py
 - When items expire vs when they're evicted
 - Cache hit vs cache miss messages
 
-## Step 2: The Learning Formula
-**Concept + Questions + Examples**
+## Step 2: The learning formula
+**Concept + questions + examples**
 
-### Example Prompt
+### Example prompt
 ```
 Concept: Cache eviction policies in my cache system
 
@@ -39,17 +39,17 @@ Show me practical scenarios using my cache_system.py:
 - Image thumbnail caching (large objects, infrequent access)
 ```
 
-### Why This Pattern Works
-- **Concept**: Specific topic you want to understand
-- **Questions**: Targeted questions about what confuses you
-- **Examples**: Real scenarios using your actual code
+### Why this pattern works
+- **Concept**: Specific topic you want to explore.
+- **Questions**: Targeted questions about what confuses you.
+- **Examples**: Real scenarios using your actual code.
 
-## Step 3: Your Turn to Practice
+## Step 3: Try it yourself
 
-After watching the cache demo, write learning prompts for:
+After running the cache demo, write learning prompts for:
 
-1. **Threading safety** - How to make cache thread-safe
-2. **Memory management** - When cache uses too much RAM
-3. **Performance monitoring** - How to measure cache effectiveness
+1. **Threading safety**: How to make the cache thread-safe.
+2. **Memory management**: What to do when the cache uses too much RAM.
+3. **Performance monitoring**: How to measure cache effectiveness.
 
-*Check answers.md when you're done!* 
+*Check expert-solution.md when you're done!* 
