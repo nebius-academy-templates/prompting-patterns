@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """
-File Organiser - Has a Bug to Fix
+File Organizer - Has a Bug to Fix
 ==================================
 
-This script organises files by extension into folders.
+This script organizes files by extension into folders.
 There's a bug that causes it to fail on some file types.
 
-Practice Challenge: Use the "Debugging" prompt pattern to fix the issue
+Practice challenge: Use the "Debugging" prompt pattern to fix the issue
 """
 
 import os
 import shutil
 from pathlib import Path
 
-class FileOrganiser:
+class FileOrganizer:
     def __init__(self, source_dir):
         self.source_dir = Path(source_dir)
-        self.organised_count = 0
+        self.organized_count = 0
         
         # File type mappings - this has the bug!
         self.file_categories = {
@@ -46,8 +46,8 @@ class FileOrganiser:
             category_path = self.source_dir / category
             category_path.mkdir(exist_ok=True)
     
-    def organise_files(self):
-        """Organise files into category folders"""
+    def organize_files(self):
+        """Organize files into category folders"""
         if not self.source_dir.exists():
             raise FileNotFoundError(f"Source directory not found: {self.source_dir}")
         
@@ -66,17 +66,17 @@ class FileOrganiser:
                 
                 # Move the file
                 shutil.move(str(file_path), str(destination_path))
-                self.organised_count += 1
+                self.organized_count += 1
                 print(f"Moved {file_path.name} to {category}/")
                 
             except Exception as e:
                 print(f"Error moving {file_path.name}: {e}")
                 continue
         
-        print(f"\nOrganised {self.organised_count} files")
+        print(f"\nOrganized {self.organized_count} files")
 
 def create_test_files(test_dir):
-    """Create test files to organise"""
+    """Create test files to organize"""
     test_path = Path(test_dir)
     test_path.mkdir(exist_ok=True)
     
@@ -101,17 +101,17 @@ def create_test_files(test_dir):
 def main():
     test_directory = "test_files"
     
-    print("File Organiser - Testing Version")
+    print("File Organizer - Testing Version")
     print("=" * 40)
     
     # Create test files
     create_test_files(test_directory)
     
-    # Try to organise them (this will trigger the bug)
-    organiser = FileOrganiser(test_directory)
+    # Try to organize them (this will trigger the bug)
+    organizer = FileOrganizer(test_directory)
     
-    print(f"\nOrganising files in {test_directory}...")
-    organiser.organise_files()
+    print(f"\nOrganizing files in {test_directory}...")
+    organizer.organize_files()
 
 if __name__ == "__main__":
     main() 
