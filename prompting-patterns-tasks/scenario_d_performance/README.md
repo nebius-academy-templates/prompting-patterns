@@ -1,8 +1,8 @@
 # Scenario D: Performance Pattern
 
-## Step 1: Test the Slow CSV Processor
+## Step 1: Test the slow CSV processor
 
-First, see how painfully slow this is:
+First, see how painfully slow this program is:
 
 ```bash
 python csv_processor.py
@@ -16,17 +16,17 @@ python csv_processor.py
 **How long it takes:** 15-20 seconds (way too slow!)
 
 **Watch for these slow parts:**
-- Loading CSV (lots of delays)
-- Calculating totals (multiple passes through data)
+- Loading the CSV (lots of delays)
+- Calculating totals (multiple passes through the data)
 - Finding top products (terrible bubble sort!)
-- Writing report (one line at a time)
+- Writing the report (one line at a time)
 
-## Step 2: The Performance Formula
-**Current Problem + Target + Bottleneck**
+## Step 2: The performance formula
+**Current problem + target + bottleneck**
 
-### Example Prompt
+### Example prompt
 ```
-Current Problem: CSV processor takes 30 seconds for 10MB file
+Current problem: CSV processor takes 30 seconds for 10MB file
 
 Target: Process same file in under 5 seconds
 
@@ -38,17 +38,17 @@ Current code:
 - Creates new objects for every row
 ```
 
-### Why This Pattern Works
-- **Current Problem**: Specific performance issue with measurements
-- **Target**: Clear goal with numbers
-- **Bottleneck**: Identifies where the slowdown happens
+### Why this pattern works
+- **Current problem**: Describes the performance issue with measurable data.
+- **Target**: Sets a clear goal with numbers.
+- **Bottleneck**: Identifies where the slowdown happens.
 
-## Step 3: Your Turn to Practice
+## Step 3: Try it yourself
 
-After watching the slow processing, write performance prompts for:
+After running the script and observing the slow processing, write performance prompts for:
 
-1. **The current slowness** - Fix the immediate performance issues
-2. **Memory usage** - Program uses too much RAM
-3. **Large file handling** - Crashes on files over 50MB
+1. **Current slowness**: Fix the immediate performance issues.
+2. **Memory usage**: Program uses too much RAM.
+3. **Large file handling**: Crashes on files over 50MB.
 
-*Check answers.md when you're done!* 
+*Check expert-solution.md when you're done!* 
