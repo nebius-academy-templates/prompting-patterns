@@ -15,8 +15,8 @@ I need to add these memory features:
 3. Memory clear (MC) - reset memory to zero
 
 Please modify the following:
-- `calculator.py`: Add `memory_store`, `memory_recall`, `memory_clear` methods
-- Add `memory` variable to store the value
+- calculator.py: Add memory_store, memory_recall, memory_clear methods
+- Add memory variable to store the value
 - Update the command interface to handle M+, MR, MC commands
 ```
 
@@ -35,7 +35,7 @@ I need to add percentage calculations:
 3. Percentage decrease (e.g. 100 - 20% = 80)
 
 Please modify the following:
-- calculator.py: Add `percentage`, `percent_increase`, `percent_decrease` methods
+- calculator.py: Add percentage, percent_increase, percent_decrease methods
 - Update the command interface to handle "percent" command
 ```
 
