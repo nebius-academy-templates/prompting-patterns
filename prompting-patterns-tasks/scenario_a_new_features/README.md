@@ -20,7 +20,7 @@ python calculator.py
 **Current functionality:** Basic arithmetic operations with history tracking.
 
 ## Step 2: The new features prompting formula
-**Context + Requirements + File Structure**
+**Context + requirements + file structure**
 
 ### Example prompt
 ```
