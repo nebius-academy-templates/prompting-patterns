@@ -40,7 +40,7 @@ Please update:
 ### Why this pattern works
 - **Context**: Shows current code state.
 - **Requirements**: A numbered list of new features to add.
-- **File Structure**: You specify which files need changes.
+- **File structure**: You specify which files need changes.
 
 ## Step 3: Try it yourself
 
