@@ -1,10 +1,10 @@
-# Answers: Learning Pattern
+# Expert Solution: Learning Pattern
 
-## Practice Exercise Solutions
+## Practice exercise solutions
 
-### 1. Threading Safety
+### 1. Threading safety
 
-**Good Prompt:**
+**Good prompt:**
 ```
 Concept: Thread safety in cache systems
 
@@ -20,9 +20,9 @@ Show me using my cache_system.py code:
 - Race condition examples where cache gets corrupted
 ```
 
-### 2. Memory Management
+### 2. Memory management
 
-**Good Prompt:**
+**Good prompt:**
 ```
 Concept: Cache memory management and garbage collection
 
@@ -32,15 +32,15 @@ Questions:
 3. What's the relationship between cache size and memory usage?
 
 Examples:
-Using my cache_system.py:
+Show me using my cache_system.py:
 - Cache storing large objects (images, files) vs small objects (strings, numbers)
 - Memory usage patterns with different eviction policies
 - How to monitor and alert when cache memory gets too high
 ```
 
-### 3. Performance Monitoring
+### 3. Performance monitoring
 
-**Good Prompt:**
+**Good prompt:**
 ```
 Concept: Measuring cache effectiveness and performance
 
@@ -50,15 +50,15 @@ Questions:
 3. When should I increase cache size vs change eviction policy?
 
 Examples:
-Using my cache_system.py:
+Show me using my cache_system.py:
 - Dashboard showing cache hit/miss rates over time
 - Comparing performance with cache enabled vs disabled
 - A/B testing different cache configurations
 ```
 
-## Key Takeaways
+## Key takeaways
 
-- **Concept**: Be specific about what you want to learn
-- **Questions**: Ask targeted questions, not "explain everything"
-- **Examples**: Request examples using your actual code and real scenarios
-- Focus on practical understanding, not just theory! 
+- **Concept**: Be specific about what you want to learn.
+- **Questions**: Ask targeted questions, not "explain everything".
+- **Examples**: Request examples using your actual code and real scenarios.
+- Focus on practical understanding, not just theory.
