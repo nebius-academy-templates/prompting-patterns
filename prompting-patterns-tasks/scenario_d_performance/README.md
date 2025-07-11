@@ -50,5 +50,3 @@ After running the script and observing the slow processing, write performance pr
 1. **Current slowness**: Fix the immediate performance issues.
 2. **Memory usage**: Program uses too much RAM.
 3. **Large file handling**: Crashes on files over 50MB.
-
-*Check expert-solution.md when you're done!* 
