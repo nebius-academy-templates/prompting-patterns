@@ -49,5 +49,3 @@ After you reproduce the crash, write debugging prompts for:
 1. **Current crash**: Fix the immediate error.
 2. **Memory leak**: Program gets slower with large files.
 3. **Permission errors**: Can't move files to certain folders.
-
-*Check expert-solution.md when you're done!* 
