@@ -1,33 +1,33 @@
 # Scenario B: Debugging Pattern
 
-## Step 1: Test the Buggy File Organiser
+## Step 1: Test the buggy file organizer
 
-First, let's trigger the bug:
+First, let's trigger the bug and observe what happens:
 
 ```bash
 python file_organiser.py
 ```
 
-**What should happen:** Files get organised into folders by type (images, documents, etc.)
+**Expected behavior:** Files get organized into folders by type (images, documents, etc.)
 
-**What actually happens:** Program crashes with an error when it hits certain file types!
+**Actual behavior:** The program crashes when it encounters certain file types.
 
-**The error you'll see:**
+**Error message:**
 ```
 TypeError: unsupported operand type(s) for /: 'NoneType' and 'str'
 ```
 
-**Why it crashes:** The script doesn't know how to handle `.py`, `.ini`, and `.md` files.
+**Root cause:** The script doesn't know how to handle `.py`, `.ini`, or `.md` files.
 
-## Step 2: The Debugging Formula
-**Problem + Expected vs Actual + Context Files**
+## Step 2: The debugging formula
+**Problem + expected vs actual + context files**
 
-### Example Prompt
+### Example prompt
 ```
-Problem: My file organiser crashes with "KeyError" when processing files
+Problem: My file organiser crashes with a "KeyError" when processing files.
 
-Expected: Should handle unknown file types gracefully
-Actual: Program crashes and stops processing
+Expected: Should handle unknown file types gracefully.
+Actual: It crashes and stops processing.
 
 Context files:
 - file_organiser.py (main logic)
@@ -37,17 +37,17 @@ Error message:
 KeyError: '.xyz' in get_file_category() function
 ```
 
-### Why This Pattern Works
-- **Problem**: Clear description of what's wrong
-- **Expected vs Actual**: Shows the gap between what should happen and what does
-- **Context Files**: Points to relevant code and test cases
+### Why this pattern works
+- **Problem**: A clear description of what's going wrong.
+- **Expected vs actual**: Highlights the gap between what the intended behavior and what's happening.
+- **Context files**: Points to the relevant code and test cases.
 
-## Step 3: Your Turn to Practice
+## Step 3: Try it yourself
 
-After you see the crash, write debugging prompts for:
+After you reproduce the crash, write debugging prompts for:
 
-1. **The current crash** - Fix the immediate error
-2. **Memory leak** - Program gets slower with large files
-3. **Permission errors** - Can't move files to certain folders
+1. **Current crash**: Fix the immediate error.
+2. **Memory leak**: Program gets slower with large files.
+3. **Permission errors**: Can't move files to certain folders.
 
-*Check answers.md when you're done!* 
+*Check expert-solution.md when you're done!* 
