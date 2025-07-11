@@ -53,5 +53,3 @@ After exploring the messy code, write refactoring prompts for:
 1. **Database separation**: Move all file operations to a separate class.
 2. **Menu system**: Replace the if/elif chain with a cleaner menu system.
 3. **Search functionality**: Add the ability to find contacts by name/phone.
-
-*Check expert-solution.md when you're done!*
