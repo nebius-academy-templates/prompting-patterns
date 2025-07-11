@@ -1,58 +1,58 @@
-# Answers: Debugging Pattern
+# Expert Solution: Debugging Pattern
 
-## Practice Exercise Solutions
+## Practice exercise solutions
 
-### 1. Memory Leak Issue
+### 1. Memory leak issue
 
-**Good Prompt:**
+**Good prompt:**
 ```
-Problem: File organiser uses increasing amounts of memory and gets slower with large files
+Problem: File organizer uses increasing amounts of memory and gets slower with large files.
 
-Expected: Memory usage should stay constant regardless of file size
-Actual: Memory grows from 50MB to 500MB when processing 1000 files, processing speed drops from 10 files/sec to 2 files/sec
+Expected: Memory usage should stay constant regardless of file size.
+Actual: Memory grows from 50MB to 500MB when processing 1000 files, processing speed drops from 10 files/sec to 2 files/sec.
 
 Context files:
-- file_organiser.py (main processing loop)
+- file_organizer.py (main processing loop)
 - Large test files in test_files/ directory
 
-Suspected issue: File objects or data structures not being properly cleaned up after processing each file
+Suspected issue: File objects or data structures not being properly cleaned up after processing each file.
 ```
 
-### 2. Permission Errors
+### 2. Permission errors
 
-**Good Prompt:**
+**Good prompt:**
 ```
-Problem: Program crashes with "PermissionError: [Errno 13] Permission denied" when moving files
+Problem: Program crashes with "PermissionError: [Errno 13] Permission denied" when moving files.
 
-Expected: Should handle permission errors gracefully and continue processing other files
-Actual: Entire program stops when it hits a protected file or folder
+Expected: Should handle permission errors gracefully and continue processing other files.
+Actual: Entire program stops when it hits a protected file or folder.
 
 Context files:
-- file_organiser.py (file moving logic)
+- file_organizer.py (file moving logic)
 - test_files/ (contains some read-only files)
 
-Error occurs in move_file() function when trying to move files to system directories
+Error occurs in move_file() function when trying to move files to system directories.
 ```
 
-### 3. Duplicate File Handling
+### 3. Duplicate file handling
 
-**Good Prompt:**
+**Good prompt:**
 ```
-Problem: Files with identical names overwrite each other without warning
+Problem: Files with identical names overwrite each other without warning.
 
-Expected: Should detect duplicates and either rename them or ask user what to do
-Actual: Second file with same name silently replaces the first file
+Expected: Should detect duplicates and either rename them or ask user what to do.
+Actual: Second file with same name silently replaces the first file.
 
 Context files:
-- file_organiser.py (file moving and naming logic)
+- file_organizer.py (file moving and naming logic)
 - test_files/ (contains duplicate.txt files)
 
-Issue happens in organise_files() when destination file already exists
+Issue happens in organize_files() when destination file already exists.
 ```
 
-## Key Takeaways
+## Key takeaways
 
-- **Problem**: Be specific about the error and when it occurs
-- **Expected vs Actual**: Clearly show the gap between what should happen and what does
-- **Context Files**: Point to the exact files and functions involved
-- Include error messages and specific conditions that trigger the bug! 
+- **Problem**: Be specific about the error and when it occurs.
+- **Expected vs actual**: Clearly show the gap between what should happen and what does.
+- **Context files**: Point to the exact files and functions involved.
+- Include error messages and specific conditions that trigger the bug.
