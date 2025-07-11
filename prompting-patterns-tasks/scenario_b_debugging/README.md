@@ -5,7 +5,7 @@
 First, let's trigger the bug and observe what happens:
 
 ```bash
-python file_organiser.py
+python file_organizer.py
 ```
 
 **Expected behavior:** Files get organized into folders by type (images, documents, etc.)
@@ -24,13 +24,13 @@ TypeError: unsupported operand type(s) for /: 'NoneType' and 'str'
 
 ### Example prompt
 ```
-Problem: My file organiser crashes with a "KeyError" when processing files.
+Problem: My file organizer crashes with a "KeyError" when processing files.
 
 Expected: Should handle unknown file types gracefully.
 Actual: It crashes and stops processing.
 
 Context files:
-- file_organiser.py (main logic)
+- file_organizer.py (main logic)
 - test_files/ (sample files that cause crashes)
 
 Error message:
