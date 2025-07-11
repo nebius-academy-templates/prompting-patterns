@@ -51,5 +51,3 @@ After running the cache demo, write learning prompts for:
 1. **Threading safety**: How to make the cache thread-safe.
 2. **Memory management**: What to do when the cache uses too much RAM.
 3. **Performance monitoring**: How to measure cache effectiveness.
-
-*Check expert-solution.md when you're done!* 
