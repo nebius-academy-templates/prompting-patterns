@@ -49,5 +49,3 @@ Write prompts using the same formula for these scenarios:
 1. **Add memory functions** (store, recall, clear memory)
 2. **Add percentage calculations** 
 3. **Add history feature** (show last 5 calculations)
-
-*Check expert-solution.md when you're done!* 
